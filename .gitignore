@@ -1,0 +1,8 @@
+.DS_Store
+*.pyc
+*.iml
+*.ipr
+*.iws
+*.swp
+.idea
+.project
