@@ -1,16 +1,13 @@
-import time
 from behave import *
 from appium import webdriver
-from browserstack.local import Local
 
 
 @when('first page of app')
 def step_impl(context):
-    time.sleep(10)
     desired_caps = {}
     desired_caps['realMobile'] = 'true'
     desired_caps['device'] = 'Google Pixel'
-    desired_caps['build'] = 'Behave!!'
+    desired_caps['build'] = context.BUILD_NAME
     desired_caps['browserstack.local'] = 'true'
     desired_caps['name'] = 'Python Local {}'.format(desired_caps['device'])
     desired_caps["app"] = context.android_local_app
@@ -20,9 +17,7 @@ def step_impl(context):
     context.driver = driver
 
 
-
 @then('we should see Up and Running')
 def step_impl(context):
-    print(dir(context.driver))
     assert True
     context.driver.quit()

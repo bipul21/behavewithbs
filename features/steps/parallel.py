@@ -21,7 +21,7 @@ class ParallelSession(threading.Thread):
 
 @when('just open the app')
 def step_impl(context):
-    desired_caps = {'realMobile': 'true', 'build': 'Behave!!', "app": context.android_app}
+    desired_caps = {'realMobile': 'true', 'build': context.BUILD_NAME, "app": context.android_app}
     device_names = ["Google Pixel", "Google Pixel", "Google Pixel"]
     session_holder = []
     for index, device in enumerate(device_names):
@@ -38,5 +38,3 @@ def step_impl(context):
 @then('we should see the app')
 def step_impl(context):
     assert True
-    if context.driver:
-        context.driver.quit()

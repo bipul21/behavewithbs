@@ -1,4 +1,9 @@
 {
-  "BS_USER_NAME":"bipuljain2",
-  "BS_USER_AUTH_TOKEN":"XKZq8VnNEJPxiQjftzsU"
+  "BS_USER_NAME":"Lorem ipsum",
+  "BS_USER_AUTH_TOKEN":"Lorem ipsum",
+  "BUILD_NAME":"Lorem ipsum",
+  "ANDROID_APP":"bs://Lorem ipsum",
+  "IOS_APP":"bs://Lorem ipsum",
+  "ANDROID_LOCAL_APP":"bs://Lorem ipsum",
+  "IOS_LOCAL_APP":"bs://Lorem ipsum"
 }
