@@ -1,5 +1,5 @@
 
-@android
+@android @plain
 Feature: Wikipedia Search Functionality on Android
 
   Scenario: can find search results
