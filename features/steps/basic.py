@@ -1,10 +1,6 @@
 from behave import *
 from appium import webdriver
 
-BS_USERNAME = "bipuljain2"
-BS_AUTH_TOKEN = "XKZq8VnNEJPxiQjftzsU"
-
-
 @given('we have "{device_type}" app uploaded')
 def step_impl(context, device_type):
     if device_type == "android":

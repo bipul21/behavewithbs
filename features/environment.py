@@ -28,13 +28,3 @@ def before_all(context):
     context.BUILD_NAME = BS_CONFIG["BUILD_NAME"]
     context.BS_USER_NAME = BS_USER_NAME
     context.BS_USER_AUTH_TOKEN = BS_USER_AUTH_TOKEN
-
-    # bs_local = Local()
-    # bs_local_args = {"key": context.BS_USER_AUTH_TOKEN, "forcelocal": "true"}
-    # context.bs_local = bs_local
-    # context.bs_local.start(**bs_local_args)
-
-
-def after_all(context):
-    pass
-    # context.bs_local.stop()
