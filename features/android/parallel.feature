@@ -1,5 +1,5 @@
 @android @parallel
-Feature: BS Parallel Sessions Functionality
+Feature: BS Parallel Sessions Functionality  on Android
 
   Scenario: Just run a plain app
     Given we have "android" app uploaded

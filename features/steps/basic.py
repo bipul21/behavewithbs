@@ -1,5 +1,7 @@
 from behave import *
 from appium import webdriver
+from constants import *
+
 
 @given('we have "{device_type}" app uploaded')
 def step_impl(context, device_type):
@@ -14,10 +16,10 @@ def step_impl(context, device_type):
     desired_caps = {'realMobile': 'true', 'build': context.BUILD_NAME}
 
     if device_type == 'android':
-        desired_caps['device'] = 'Google Pixel'
+        desired_caps['device'] = ANDROID_DEVICE_TYPE
         desired_caps["app"] = context.android_app
     elif device_type == "ios":
-        desired_caps['device'] = 'iphone 7'
+        desired_caps['device'] = IOS_DEVICE_TYPE
         desired_caps["app"] = context.ios_app
         desired_caps["automationName"] = "XCUITest"
 
