@@ -12,6 +12,7 @@ def step_impl(context):
         'http://{}:{}@hub.browserstack.com/wd/hub'.format(context.BS_USER_NAME, context.BS_USER_AUTH_TOKEN),
         desired_caps)
     context.driver = driver
+    context.driver.find_element_by_id("com.example.android.basicnetworking:id/test_action").click()
 
 
 @then('we should see Up and Running')
