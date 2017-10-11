@@ -7,8 +7,12 @@ from constants import *
 def step_impl(context, device_type):
     if device_type == "android":
         assert (context.android_app is not None)
+    elif device_type == "android_local":
+        assert (context.android_local_app is not None)
     elif device_type == "ios":
         assert (context.ios_app is not None)
+    elif device_type == "ios_local":
+        assert (context.ios_local_app is not None)
 
 
 @when('search "{device_type}" app with Browserstack')
